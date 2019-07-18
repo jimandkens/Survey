@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 請定義問券名稱 -->
+    <title> 社團活動報名 </title>
+</head>
+<body>
+
+    <!-- HTML5 新增了許多 <input> 的型態，請使用這些type，設計一份問卷 -->
+    <!-- http://www.w3schools.com/html/html_form_input_types.asp -->
+
+    <!-- 如果不知道該怎麼下手，請參考這個網站所設計的情境問卷找靈感 -->
+    <!-- https://technews.tw/2018/10/18/surveycake-situation-list/ -->
+
+    <!-- 底下是作業需要包含的項目 -->
+    <!-- 1. 問卷需包含 5-7 個問題 -->
+    <!-- 2. type 挑選時，請盡量不重複 -->
+    <!-- 3. 挑選 至少 1 個問題，設置 pattern 檢核 -->
+    <img src="中秋快樂！！！.jpg" alt="" width="250px" height="250px">
+    <h2>社團活動報名表</h2>
+    <form>
+        <div>
+            <label for="name">姓名：</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <br>
+        <div>
+            <label>性別：</label>
+            <input type="radio" name="sex" id="male">
+            <label for="male">男</label>
+            <input type="radio" name="sex" id="female">
+            <label for="female">女</label>
+
+        </div>
+        <br>
+        <div>
+                <label>年級：</label>
+                <select name="grade">
+                    <option value="first">1</option>
+                    <option value="second">2</option>
+                    <option value="third">3</option>
+                    <option value="fourth">4</option>
+                    <option value="fifth">5</option>
+                </select>
+            </div>
+        <br>
+        <div>
+            <label>班級：</label>
+            <select name="class">
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+                <option value="four">4</option>
+                <option value="five">5</option>
+            </select>
+        </div>
+        <br>
+        <div>
+                <label for="birthday">出生年月日:</label>
+                <input type="date" name="birthdayday">
+        </div>
+        <br>
+        <div>
+            <label for="email"> E-mail:</label>
+            <input type="email" name="email">
+        </div>
+        <br>
+        <div>
+            <label>社團名稱：</label>
+            <input type="checkbox" name="group" id="baseball">
+            <label for="baseball">棒球社</label>
+            <input type="checkbox" name="group" id="basketball">
+            <label for="basketball">籃球社</label>
+            <input type="checkbox" name="group" id="bedminton">
+            <label for="bedminton">羽毛球社</label>
+        </div>
+    </form>
+    
+
+
+</body>
+
+</html>
